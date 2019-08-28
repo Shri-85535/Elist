@@ -14,7 +14,7 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 class User(db.Model):
-    __tablename__ = 'Users':
+    __tablename__ = 'Users'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(150), nullable=False)
