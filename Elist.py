@@ -16,7 +16,11 @@ ma = Marshmallow(app)
 auth = HTTPBasicAuth()
 
 class User(db.Model):
+<<<<<<< HEAD
     __tablename__ = 'User_List'
+=======
+    __tablename__ = 'Users'
+>>>>>>> ad0270384d2e3aa8de27c44343e6fd96fd60c3a6
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(150), nullable=False)
