@@ -94,7 +94,7 @@ def add_emp():
 def show_emps():
     all_emp = Employee.query.all()
     result = EsSchema.dump(all_emp)
-    return jsonify(result.data)
+    return jsonify(result)
 
 @app.route('/elist/<id>', methods=['GET'])
 def emp_byid(id):
